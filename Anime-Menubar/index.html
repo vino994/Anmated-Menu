@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuBar-Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle">
+            <ul class="icon">
+                <li><a href=""><i class="fa-brands fa-rebel"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-earth-europe"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-ghost"></i></a></li>
+            </ul>
+        </div>
+        <div class="menutoggle">
+            <span>+</span>
+        </div>
+        <ul class="menu">
+            <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""><i class="fa-solid fa-photo-film"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-id-badge"></i></a></li>
+
+        </ul>
+
+    </div>
+    <script>
+        var menutoggle = document.querySelector('.menutoggle');
+        var container = document.querySelector('.container');
+
+        menutoggle.addEventListener('click',function(){
+            container.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
